@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
       - name: payment
-        image: s"{{ .Values.deployment.image }}:{{ .Values.deployment.imageVersion }}"
+        image: "{{ .Values.deployment.image }}:{{ .Values.deployment.imageVersion }}"
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
